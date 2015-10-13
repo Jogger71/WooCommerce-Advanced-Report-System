@@ -24,20 +24,39 @@ $report_args = array(
 	)
 );
 
+//  Fault tolerant code. Previous month of the first is 12 not 0
+if ($today['mon'] == 1) {
+	$start_date = array(
+		'year' => $today['year'] - 1,
+		'month' => 12,
+		'day' => 1
+	);
+
+	$end_date = array(
+		'year' => $today['year'] - 1,
+		'month' => 12,
+		'day' => $today['mday']
+	);
+} else {
+	$start_date = array(
+			'year' => $today[ 'year' ],
+			'month' => $today[ 'mon' ] - 1,
+			'day' => 1
+	);
+
+	$end_date = array(
+			'year' => $today[ 'year' ],
+			'month' => $today[ 'mon' ] - 1,
+			'day' => $today[ 'mday' ],
+	);
+}
+
 $last_month_args = array(
 	'order_statuses' => false,
 	'products' => false,
 	'product_types' => false,
-	'start_date' => array(
-		'year' => $today[ 'year' ],
-		'month' => $today[ 'mon' ] - 1,
-		'day' => 1
-	),
-	'end_date' => array(
-		'year' => $today[ 'year' ],
-		'month' => $today[ 'mon' ] - 1,
-		'day' => $today[ 'mday' ],
-	)
+	'start_date' => $start_date,
+	'end_date' => $end_date
 );
 
 $report = new WCARS_Report( $report_args );
