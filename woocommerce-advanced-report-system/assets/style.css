@@ -1,0 +1,82 @@
+.wcars-report-ui table.order-status {
+  border: 4px solid black;
+  float: left;
+  margin-left: 1%;
+  width: 24%;
+}
+.wcars-report-ui table.order-status th {
+  background: black;
+  color: white;
+  font-size: 28px;
+  line-height: 30px;
+  padding: 10px;
+}
+.wcars-report-ui table.order-status .heading-label {
+  font-size: 22px;
+  margin: 0;
+  padding: 10px;
+}
+.wcars-report-ui table.order-status .label {
+  padding: 10px;
+}
+.wcars-report-ui table.order-status .value {
+  font-size: 18px;
+  padding: 10px;
+}
+.wcars-report-ui table.order-status.completed {
+  border: 4px solid green;
+  margin-left: 1%;
+}
+.wcars-report-ui table.order-status.completed th {
+  background: green;
+}
+.wcars-report-ui table.order-status.on-hold {
+  border: 4px solid darkgrey;
+  margin-left: 1%;
+}
+.wcars-report-ui table.order-status.on-hold th {
+  background: darkgrey;
+}
+.wcars-report-ui table.order-status.processing {
+  border: 4px solid cornflowerblue;
+  margin-left: 1%;
+}
+.wcars-report-ui table.order-status.processing th {
+  background: cornflowerblue;
+}
+.wcars-report-ui .year {
+  border: 1px solid #333333;
+  width: 100%;
+}
+.wcars-report-ui .year th,
+.wcars-report-ui .year td {
+  border: 1px solid #333;
+}
+.wcars-report-ui .month-sales {
+  border: 1px solid #333;
+  width: 100%;
+}
+.wcars-report-ui .month-sales th,
+.wcars-report-ui .month-sales td {
+  border: 1px solid #333;
+}
+.wcars-report-ui .month-sales .sub-total {
+  background: #fffaad;
+}
+.wcars-report-ui .month-sales .grand-total {
+  background: yellow;
+  font-weight: bold;
+}
+.wcars-report-ui .month-sales .products-sold {
+  background: lightblue;
+}
+.wcars-report-ui .month-sales .total-products-sold {
+  background: #7083ff;
+  color: #FFF;
+  font-weight: bold;
+}
+.wcars-report-ui .month-sales .product-value {
+  background: #63aa5f;
+}
+
+/*# sourceMappingURL=style.css.map */

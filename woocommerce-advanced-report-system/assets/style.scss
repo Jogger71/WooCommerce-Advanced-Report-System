@@ -1,0 +1,101 @@
+.wcars-report-ui {
+	table.order-status {
+		border: 4px solid black;
+		float: left;
+		margin-left: 1%;
+		width: 24%;
+
+		th {
+			background: black;
+			color: white;
+			font-size: 28px;
+			line-height: 30px;
+			padding: 10px;
+		}
+
+		.heading-label {
+			font-size: 22px;
+			margin: 0;
+			padding: 10px;
+		}
+
+		.label {
+			padding: 10px;
+		}
+
+		.value {
+			font-size: 18px;
+			padding: 10px;
+		}
+
+		&.completed {
+			border: 4px solid green;
+			margin-left: 1%;
+
+			th {
+				background: green;
+			}
+		}
+
+		&.on-hold {
+			border: 4px solid darkgrey;
+			margin-left: 1%;
+
+			th {
+				background: darkgrey;
+			}
+		}
+
+		&.processing {
+			border: 4px solid cornflowerblue;
+			margin-left: 1%;
+
+			th {
+				background: cornflowerblue;
+			}
+		}
+	}
+
+	.year {
+		border: 1px solid #333333;
+		width: 100%;
+
+		th,
+		td {
+			border: 1px solid #333;
+		}
+	}
+
+	.month-sales {
+		border: 1px solid #333;
+		width: 100%;
+
+		th,
+		td {
+			border: 1px solid #333;
+		}
+
+		.sub-total {
+			background: #fffaad;
+		}
+
+		.grand-total {
+			background: yellow;
+			font-weight: bold;
+		}
+
+		.products-sold {
+			background: lightblue;
+		}
+
+		.total-products-sold {
+			background: #7083ff;
+			color: #FFF;
+			font-weight: bold;
+		}
+
+		.product-value {
+			background: #63aa5f;
+		}
+	}
+}
